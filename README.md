@@ -33,7 +33,14 @@ During the construction of this model, two critical bottlenecks frequently encou
 ## 📊 Test Results and Metrics
 The armored U-Net model, rescued from rote memorization, was tested on completely new geographies with entirely different topography and lighting angles that it had never seen during training.
 * **Final Performance:** The model autonomously reached a **65% - 67% Jaccard Index (IoU)** band in foreign regions, comfortably surpassing the 0.50 industry threshold accepted for professional detection.
-* **Visual Output:** Sensor-induced "Salt and Pepper" noise was entirely filtered out, resulting in holistic and consistent cloud maps. *(Sample test outputs can be viewed in the repository images).*
+* **Visual Output:** Sensor-induced "Salt and Pepper" noise was entirely filtered out, resulting in holistic and consistent cloud maps. 
+
+### 🌍 Autonomous Detection on Unseen Geographies
+*(Left: Raw Satellite RGB | Middle: Flawed Native SCL Mask | Right: Autonomous U-Net Prediction)*
+
+![U-Net Test Result 1](test_result_1.jpg)
+<br>
+![U-Net Test Result 2](test_result_2.jpg)
 
 ## 🚀 Future Work
 The current pipeline has successfully completed the Proof of Concept (PoC) phase by operating on a single geographic coordinate. The next phase is to expand the Dataloader infrastructure to feed the model with a massive dataset consisting of multiple topographies (e.g., deserts, oceans, snowy mountains) and push the IoU score beyond the 85%+ level.
