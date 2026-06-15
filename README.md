@@ -38,9 +38,9 @@ The armored U-Net model, rescued from rote memorization, was tested on completel
 ### 🌍 Autonomous Detection on Unseen Geographies
 *(Left: Raw Satellite RGB | Middle: Flawed Native SCL Mask | Right: Autonomous U-Net Prediction)*
 
-![U-Net Test Result 1](test_result_1.jpg)
+<img width="1780" height="612" alt="Image" src="https://github.com/user-attachments/assets/3e01295e-3716-444b-9808-4653427f292c" />
 <br>
-![U-Net Test Result 2](test_result_2.jpg)
+<img width="1751" height="1194" alt="Image" src="https://github.com/user-attachments/assets/ee6061ed-5a87-43bd-8501-3ee75ecbe4d7" />
 
 ## 🚀 Future Work
 The current pipeline has successfully completed the Proof of Concept (PoC) phase by operating on a single geographic coordinate. The next phase is to expand the Dataloader infrastructure to feed the model with a massive dataset consisting of multiple topographies (e.g., deserts, oceans, snowy mountains) and push the IoU score beyond the 85%+ level.
